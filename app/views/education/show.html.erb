@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Course:</b>
+  <%= @edu.course %>
+</p>
+
+<p>
+  <b>Branch:</b>
+  <%= @edu.place %>
+</p>
+
+
+<%= link_to 'Edit', edit_edu_path(@edu) %> |
+<%= link_to 'Back', edus_path %>

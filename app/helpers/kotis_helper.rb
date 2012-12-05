@@ -1,0 +1,2 @@
+module KotisHelper
+end

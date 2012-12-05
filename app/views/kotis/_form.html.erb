@@ -1,0 +1,25 @@
+<%= form_for(@koti) do |f| %>
+  <% if @koti.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@koti.errors.count, "error") %> prohibited this koti from being saved:</h2>
+
+      <ul>
+      <% @koti.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :place %><br />
+    <%= f.text_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label :course %><br />
+    <%= f.text_field :course %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Place:</b>
+  <%= @koti.place %>
+</p>
+
+<p>
+  <b>Course:</b>
+  <%= @koti.course %>
+</p>
+
+
+<%= link_to 'Edit', edit_koti_path(@koti) %> |
+<%= link_to 'Back', kotis_path %>
